@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 	
-public WebDriver driver;
+public static WebDriver driver; //l am facut static pentru a avea un singur obiect, altfel cand s a facut mostenirea se pierde 
 	
 	@BeforeClass 
 	public void setup() throws InterruptedException {
