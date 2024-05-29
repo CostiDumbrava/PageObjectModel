@@ -17,6 +17,7 @@ public class MenuPage extends SeleniumWrappers {
 	//driver.findElement(By.linkText('Login'));
 	public By loginLink = By.linkText("Login"); // nu este un web element, este un locator
 	public By shopLink = By.linkText("BOOKS");// tot locator
+	public By contactsLink = By.linkText("CONTACTS");
 	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();

@@ -25,9 +25,27 @@ public class SeleniumWrappers extends BaseTest { //extinde BaseTest pentru a ave
 			
 			
 		}
-		
-		
-		
 	}
+   public void sendKeys(By locator, String text) {
+	   
 
+		try {
+			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			WebElement element = driver.findElement(locator);
+			element.sendKeys(text);
+			
+		}catch(NoSuchElementException e) {
+			
+			
+		}
+	   
+   }
+   
+   public String getElementText(By locator) {
+	   
+	    WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	    return driver.findElement(locator).getText();
+   }
 }
