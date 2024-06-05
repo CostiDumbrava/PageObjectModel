@@ -64,11 +64,6 @@ public class XpathExample2 extends BaseTest {
 				+ "('style', 'background:yellow; border:4px solid red;')", loginBtn);
 		loginBtn.click();
 		
-		
-		
-		
-		
-		
 	}
 
 }
