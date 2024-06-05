@@ -1,5 +1,7 @@
 package tests;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -97,6 +99,35 @@ public class XpathExample extends BaseTest{
 		WebElement statusTabHeader = driver.findElement(By.xpath("(//span[@class='nobr'])[3]"));
 		jse.executeScript("arguments[0].setAttribute"
 				+ "('style', 'background:yellow; border:4px solid green;')", statusTabHeader);
+		
+		
+		/*
+		 *   <a href="https://keybooks.ro/account/view-order/1720/">#1720</a>  = elementul din DOM - order ul 1720
+		 *   //td[@data-title='Order']/a[contains(@href, '1720')]  = referinta in valoarea elementului
+		 *   //td[@data-title='Order']/a[contains(text(), '1720')] = referinta la textul dintre taguri
+		 *   //td[@data-title='Order']/a[(text()='#1720')] = referinta la textul dintre taguri, forma mai corecta, pentru ca folosim contains doar cand vrem sa cautam o parte din text, dar doar pt a elimina un # nu face sens
+		 *   
+		 *   //td[@data-title='Order']/a[not(contains(text(), '1720'))] = asa negam o conditie, va selecta orice in afara de 1720
+		 *   
+		 */
+		
+		//NOT
+		List<WebElement> orders = driver.findElements(By.xpath("//td[@data-title='Order']/a[not(contains(text(), '1720'))]"));
+		
+		for(WebElement order: orders) {
+			jse.executeScript("arguments[0].setAttribute"
+					+ "('style', 'background:yellow; border:4px solid green;')", order);
+			Thread.sleep(3000);
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	
