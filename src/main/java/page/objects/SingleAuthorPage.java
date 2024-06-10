@@ -16,7 +16,6 @@ public class SingleAuthorPage extends SeleniumWrappers {
 		
 	}
 
-	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
 	public By dramaPercentage = By.cssSelector("div[data-stop='95']");
 	public By biographyPercentage =By.cssSelector("div[data-stop='75']");
 	public By cookbooksPercentage = By.cssSelector("div[data-stop='82']");

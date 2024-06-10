@@ -20,6 +20,10 @@ public class MenuPage extends SeleniumWrappers {
 	public By contactsLink = By.linkText("CONTACTS");
 	public By blogLink = By.linkText("BLOG");
 	public By aboutLink = By.linkText("ABOUT");
+	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
+	
+	//homework
+	public By postFormats = By.xpath(" //ul[@id='menu_main']//a[text()='Post Formats']");
 	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();

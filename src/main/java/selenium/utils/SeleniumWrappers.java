@@ -16,6 +16,11 @@ public class SeleniumWrappers extends BaseTest { //extinde BaseTest pentru a ave
 	//WebElement element = driver.findElelemnt(locator)
 	//element.click();
 	
+	public void navigateTo(By locator) {
+		driver.findElement(locator).click();
+		
+	}
+	
 	public void click(By locator) { //clasa By se importa
 		
 		try {

@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import page.objects.MenuPage;
 import page.objects.SingleAuthorPage;
 import selenium.utils.BaseTest;
 
@@ -17,9 +18,12 @@ public class SigleAuthorTest extends BaseTest {
 		
 	@Test
 	public void percentageTest() {
-	SingleAuthorPage singleAuthPage = new SingleAuthorPage(driver);
 	
-	singleAuthPage.click(singleAuthPage.singleAuthorLink);
+	
+	MenuPage menuPage= new MenuPage(driver);
+	menuPage.click(menuPage.singleAuthorLink);
+		
+	SingleAuthorPage singleAuthPage = new SingleAuthorPage(driver);
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
