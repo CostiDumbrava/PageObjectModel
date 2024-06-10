@@ -16,10 +16,21 @@ public class SeleniumWrappers extends BaseTest { //extinde BaseTest pentru a ave
 	//WebElement element = driver.findElelemnt(locator)
 	//element.click();
 	
+	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
 		
 	}
+	
+	
+	//java doc --> documentatie pentru fiecare metoda se scrie sub forma asta si apare ca si comentariu cu Hoover:
+
+	/**
+	 * Wrapper method over selenium default click() enhanced with:
+	 * 1.waitForElementToBeVisible
+	 * 2.retry mechanism for NoSuchElement
+	 * @param locator
+	 */
 	
 	public void click(By locator) { //clasa By se importa
 		
@@ -73,4 +84,18 @@ public class SeleniumWrappers extends BaseTest { //extinde BaseTest pentru a ave
 	   
    }
    
+   
+   public void scrollVertically(int y) {
+	   
+	   Actions action = new Actions(driver);
+	   action.scrollByAmount(0,y).perform();
+	   
+   }
+   
+  public void scrollOrizontally(int x) {
+	   
+	  Actions action = new Actions(driver);
+	   action.scrollByAmount(x,0).perform();
+	   
+   }
 }

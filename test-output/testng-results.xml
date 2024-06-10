@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T07:41:40 MESZ" name="Default suite" finished-at="2024-06-10T07:42:02 MESZ" duration-ms="22014">
+  <suite started-at="2024-06-10T20:30:03 MESZ" name="Default suite" finished-at="2024-06-10T20:30:24 MESZ" duration-ms="21008">
     <groups>
     </groups>
-    <test started-at="2024-06-10T07:41:40 MESZ" name="Default test" finished-at="2024-06-10T07:42:02 MESZ" duration-ms="22014">
-      <class name="tests.AudioPostPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AudioPostPageTest@54bff557]" started-at="2024-06-10T07:41:40 MESZ" name="setup" finished-at="2024-06-10T07:41:43 MESZ" duration-ms="2621" status="PASS">
+    <test started-at="2024-06-10T20:30:03 MESZ" name="Default test" finished-at="2024-06-10T20:30:24 MESZ" duration-ms="21008">
+      <class name="tests.ScrollExample">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ScrollExample@5a56cdac]" started-at="2024-06-10T20:30:03 MESZ" name="setup" finished-at="2024-06-10T20:30:07 MESZ" duration-ms="3731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dragAndDropAudio()[pri:0, instance:tests.AudioPostPageTest@54bff557]" started-at="2024-06-10T07:41:43 MESZ" name="dragAndDropAudio" finished-at="2024-06-10T07:41:56 MESZ" duration-ms="13157" status="PASS">
+        <test-method signature="scrollDownAndTop()[pri:0, instance:tests.ScrollExample@5a56cdac]" started-at="2024-06-10T20:30:07 MESZ" name="scrollDownAndTop" finished-at="2024-06-10T20:30:19 MESZ" duration-ms="12093" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAndDropAudio -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AudioPostPageTest@54bff557]" started-at="2024-06-10T07:41:56 MESZ" name="tearDown" finished-at="2024-06-10T07:42:02 MESZ" duration-ms="6214" status="PASS">
+        </test-method> <!-- scrollDownAndTop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ScrollExample@5a56cdac]" started-at="2024-06-10T20:30:19 MESZ" name="tearDown" finished-at="2024-06-10T20:30:24 MESZ" duration-ms="5158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.AudioPostPageTest -->
+      </class> <!-- tests.ScrollExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
