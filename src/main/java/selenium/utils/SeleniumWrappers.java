@@ -98,4 +98,16 @@ public class SeleniumWrappers extends BaseTest { //extinde BaseTest pentru a ave
 	   action.scrollByAmount(x,0).perform();
 	   
    }
+  
+  public String removeFirst(String input)
+	{
+	    return input.substring(2);
+	}
+  
+  public WebElement getWebElement (By locator) {
+	  
+	  return driver.findElement(locator);
+  }
+  
+  
 }

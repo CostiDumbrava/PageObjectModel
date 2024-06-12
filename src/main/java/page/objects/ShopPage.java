@@ -36,6 +36,11 @@ public class ShopPage extends SeleniumWrappers {
 		public By textImg = By.cssSelector("div[role='dialog'] div[class='pswp__caption'] div[class='pswp__caption__center']");
 		public By closeBtn = By.cssSelector("div[role='dialog'] button[class='pswp__button pswp__button--close']");
 		
+		public By lowestPrice = By.cssSelector("ul[class='products columns-4']>li:first-child span[class='price'] ins:last-child");
+		public By highestPrice = By.cssSelector("ul[class='products columns-4']>li:last-child span[class='price'] bdi:last-child");
+		
+		
+		
 		  public void title (String bookname) {
 			 driver.findElement(searchBtn).click();		 
 			 sendKeys(searchText,bookname);
@@ -43,7 +48,7 @@ public class ShopPage extends SeleniumWrappers {
 				}
 	 //homework
 	 
-	 
+		 
 		  
 	
 	public void selectByValue(String value) {
@@ -66,13 +71,12 @@ public class ShopPage extends SeleniumWrappers {
 		select.selectByValue(visisbleText); 
 	}
 
-	 public String getSelectOption() {
-		 WebElement element = driver.findElement(sortingDropdown);
-			Select select = new Select(element); 
-			return select.getFirstSelectedOption().getText();
 		 
-	 }      
-	 
+	 public String getSelectedOption() {
+			WebElement element = driver.findElement(sortingDropdown);
+			Select select = new Select(element);
+			return select.getFirstSelectedOption().getText();	
+		}
 	
 	
 }

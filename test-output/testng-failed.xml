@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ScrollExample">
+      <class name="tests.JavaScriptExecutorTest">
         <methods>
+          <include name="example2"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="scrollByAmount"/>
         </methods>
-      </class> <!-- tests.ScrollExample -->
+      </class> <!-- tests.JavaScriptExecutorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
