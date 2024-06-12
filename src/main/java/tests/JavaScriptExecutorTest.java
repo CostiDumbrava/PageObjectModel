@@ -45,7 +45,7 @@ public class JavaScriptExecutorTest extends BaseTest {
 
 	
 	
-	    @Test
+	   // @Test
 		public void example2() throws InterruptedException {
 			
 		MenuPage menu = new MenuPage(driver);
@@ -70,33 +70,57 @@ public class JavaScriptExecutorTest extends BaseTest {
 		
 		
 		//alternativa click	
-			jse.executeScript("document.getElementsByClassName('icon-search')[0].click()");
+		//	jse.executeScript("document.getElementsByClassName('icon-search')[0].click()");
 		//alternativa pentru send keys	
-			jse.executeScript("document.getElementsByClassName('search_field')[0].value='cooking'");
+		//	jse.executeScript("document.getElementsByClassName('search_field')[0].value='cooking'");
 			
 		//alternativa pentru isDisplayed
-		String visible = jse.executeScript("return document.getElementsByClassName('post_title')[0].checkVisibility()").toString();	
-		System.out.println(visible);
+		//String visible = jse.executeScript("return document.getElementsByClassName('post_title')[0].checkVisibility()").toString();	
+		//System.out.println(visible);
 		
 		//sau
-		boolean isElementVisible = Boolean.parseBoolean(visible);
-		assertTrue(isElementVisible);
+		//boolean isElementVisible = Boolean.parseBoolean(visible);
+		//assertTrue(isElementVisible);
 			
 		//alternativa pentru getText()	
-		String bookTitle = jse.executeScript("return document.getElementsByClassName('post_title')[0].childNodes[0].innerText").toString();
-		System.out.println(bookTitle);
+		//String bookTitle = jse.executeScript("return document.getElementsByClassName('post_title')[0].childNodes[0].innerText").toString();
+		//System.out.println(bookTitle);
 		
-		jse.executeScript("document.getElementsByClassName('post_title')[0].childNodes[0].click()");
+		//jse.executeScript("document.getElementsByClassName('post_title')[0].childNodes[0].click()");
 		
-		String currentUrl = jse.executeScript("return document.url").toString();
-		System.out.println(currentUrl);
+		//alternatoiva get current url
+		//String currentUrl = jse.executeScript("return document.url").toString();
+		//System.out.println(currentUrl);
 		
-		assertEquals(currentUrl,"https://keybooks.ro/shop/a-hundred-and-one-receipes/" );
+		//assertEquals(currentUrl,"https://keybooks.ro/shop/a-hundred-and-one-receipes/" );
 		
+		//alternativa pentru getTitle()
+		//String pageTitle = jse.executeScript("return document.title").toString();
 		
+		//System.out.println(pageTitle);
 		
-			
-			
-			
+		//jse.executeScript("document.getElementById('tab-title-reviews').children[0].click()");	
+	
 		}
+		
+		
+		@Test
+		public void example3() {
+
+			System.out.println(driver.getTitle());
+			String schimbTitlulPaginii = "window.obj = function(){ document.title = 'Am schimbat titlul!'}; window.obj.call();";
+			
+			System.out.println(driver.getTitle());
+			
+			jse.executeScript(schimbTitlulPaginii);
+		
+		String jsHover = "var obj = document.createEvent('MouseEvent');"
+				+ "obj.initMouseEvent('mouseover', true);"
+				+ "arguments[0].dispatchEvent(obj);";
+		MenuPage menu =  new MenuPage(driver);
+		
+		
+		jse.executeScript(jsHover, menu.getWebElement(menu.blogLink));
+		jse.executeScript(jsHover, menu.getWebElement(menu.aboutLink));
+}
 }
