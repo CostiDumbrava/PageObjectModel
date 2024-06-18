@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T20:31:41 MESZ" name="Default suite" finished-at="2024-06-12T20:31:52 MESZ" duration-ms="10939">
+  <suite started-at="2024-06-18T17:57:42 MESZ" name="Default suite" finished-at="2024-06-18T17:57:52 MESZ" duration-ms="10078">
     <groups>
     </groups>
-    <test started-at="2024-06-12T20:31:41 MESZ" name="Default test" finished-at="2024-06-12T20:31:52 MESZ" duration-ms="10939">
-      <class name="tests.JavaScriptExecutorTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.JavaScriptExecutorTest@5a56cdac]" started-at="2024-06-12T20:31:41 MESZ" name="setup" finished-at="2024-06-12T20:31:47 MESZ" duration-ms="5675" status="PASS">
+    <test started-at="2024-06-18T17:57:42 MESZ" name="Default test" finished-at="2024-06-18T17:57:52 MESZ" duration-ms="10078">
+      <class name="tests.DropDown2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DropDown2@54bff557]" started-at="2024-06-18T17:57:42 MESZ" name="setup" finished-at="2024-06-18T17:57:45 MESZ" duration-ms="3448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="example3()[pri:0, instance:tests.JavaScriptExecutorTest@5a56cdac]" started-at="2024-06-12T20:31:47 MESZ" name="example3" finished-at="2024-06-12T20:31:47 MESZ" duration-ms="81" status="PASS">
+        <test-method signature="selectByValueIndex()[pri:0, instance:tests.DropDown2@54bff557]" started-at="2024-06-18T17:57:45 MESZ" name="selectByValueIndex" finished-at="2024-06-18T17:57:47 MESZ" duration-ms="1425" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- example3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.JavaScriptExecutorTest@5a56cdac]" started-at="2024-06-12T20:31:47 MESZ" name="tearDown" finished-at="2024-06-12T20:31:52 MESZ" duration-ms="5152" status="PASS">
+        </test-method> <!-- selectByValueIndex -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DropDown2@54bff557]" started-at="2024-06-18T17:57:47 MESZ" name="tearDown" finished-at="2024-06-18T17:57:52 MESZ" duration-ms="5180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.JavaScriptExecutorTest -->
+      </class> <!-- tests.DropDown2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -109,5 +109,9 @@ public class SeleniumWrappers extends BaseTest { //extinde BaseTest pentru a ave
 	  return driver.findElement(locator);
   }
   
-  
+  public String deleteCurrencyChar(String input) {
+  StringBuilder inputSB = new StringBuilder(input);
+  inputSB.deleteCharAt(0);
+  return input = inputSB.toString();
+  }
 }
