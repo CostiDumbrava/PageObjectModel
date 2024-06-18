@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T20:30:03 MESZ" name="Default suite" finished-at="2024-06-10T20:30:24 MESZ" duration-ms="21008">
+  <suite started-at="2024-06-12T20:31:41 MESZ" name="Default suite" finished-at="2024-06-12T20:31:52 MESZ" duration-ms="10939">
     <groups>
     </groups>
-    <test started-at="2024-06-10T20:30:03 MESZ" name="Default test" finished-at="2024-06-10T20:30:24 MESZ" duration-ms="21008">
-      <class name="tests.ScrollExample">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ScrollExample@5a56cdac]" started-at="2024-06-10T20:30:03 MESZ" name="setup" finished-at="2024-06-10T20:30:07 MESZ" duration-ms="3731" status="PASS">
+    <test started-at="2024-06-12T20:31:41 MESZ" name="Default test" finished-at="2024-06-12T20:31:52 MESZ" duration-ms="10939">
+      <class name="tests.JavaScriptExecutorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.JavaScriptExecutorTest@5a56cdac]" started-at="2024-06-12T20:31:41 MESZ" name="setup" finished-at="2024-06-12T20:31:47 MESZ" duration-ms="5675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="scrollDownAndTop()[pri:0, instance:tests.ScrollExample@5a56cdac]" started-at="2024-06-10T20:30:07 MESZ" name="scrollDownAndTop" finished-at="2024-06-10T20:30:19 MESZ" duration-ms="12093" status="PASS">
+        <test-method signature="example3()[pri:0, instance:tests.JavaScriptExecutorTest@5a56cdac]" started-at="2024-06-12T20:31:47 MESZ" name="example3" finished-at="2024-06-12T20:31:47 MESZ" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollDownAndTop -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ScrollExample@5a56cdac]" started-at="2024-06-10T20:30:19 MESZ" name="tearDown" finished-at="2024-06-10T20:30:24 MESZ" duration-ms="5158" status="PASS">
+        </test-method> <!-- example3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.JavaScriptExecutorTest@5a56cdac]" started-at="2024-06-12T20:31:47 MESZ" name="tearDown" finished-at="2024-06-12T20:31:52 MESZ" duration-ms="5152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.ScrollExample -->
+      </class> <!-- tests.JavaScriptExecutorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
