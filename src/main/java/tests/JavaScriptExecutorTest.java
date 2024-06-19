@@ -43,7 +43,7 @@ public class JavaScriptExecutorTest extends BaseTest {
 		driver.get(driver.getCurrentUrl());
 	}
 	
-	   		    //@Test
+	   		    @Test
 				public void example2() throws InterruptedException {
 					MenuPage menu = new MenuPage(driver);
 					//JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -123,7 +123,7 @@ public class JavaScriptExecutorTest extends BaseTest {
 				
 				}
 
-				@Test
+				//@Test
 				public void example3() {
 
 					System.out.println(driver.getTitle());
