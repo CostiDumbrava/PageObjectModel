@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite1">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite1" title="tests.ContactFormTest" class="method navigator-link" hash-for-method="sendMessageTest">sendMessageTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite1" title="tests.WindowHandleExample" class="method navigator-link" hash-for-method="windowHandleTest">windowHandleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite1 -->
@@ -122,18 +122,26 @@
           <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.ContactFormTest</span>
+              <span class="class-name">tests.WindowHandleExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sendMessageTest">
-                  </a> <!-- sendMessageTest -->
-                  <span class="method-name">sendMessageTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Thank you for your message. It has been sent.x] but found [Thank you for your message. It has been sent.]
-	at tests.ContactFormTest.sendMessageTest(ContactFormTest.java:30)
+                  <a name="windowHandleTest">
+                  </a> <!-- windowHandleTest -->
+                  <span class="method-name">windowHandleTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: View larger map (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\C1C57~1.DUM\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54047}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54047/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97c58d72dcd58dba5a094309cb00b2ff
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at selenium.utils.SeleniumWrappers.click(SeleniumWrappers.java:39)
+	at tests.WindowHandleExample.windowHandleTest(WindowHandleExample.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -152,7 +160,7 @@
   &lt;parameter name=&quot;appUrl&quot; value=&quot;https://keybooks.ro&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.ContactFormTest&quot;/&gt;
+      &lt;class name=&quot;tests.WindowHandleExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -194,14 +202,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sendMessageTest')
-data.setCell(0, 2, 'tests.ContactFormTest')
-data.setCell(0, 3, 4083);
+data.setCell(0, 1, 'windowHandleTest')
+data.setCell(0, 2, 'tests.WindowHandleExample')
+data.setCell(0, 3, 16207);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -227,7 +235,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.ContactFormTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.WindowHandleExample</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(https://keybooks.ro)</span>
                 <span class="method-start">0 ms</span>
@@ -235,16 +243,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">sendMessageTest</span>
-                <span class="method-start">4075 ms</span>
+                <span class="method-name">windowHandleTest</span>
+                <span class="method-start">3660 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">recordFailure([TestResult name=sendMessageTest status=FAILURE method=ContactFormTest.sendMessageTest()[pri:0, inst...)</span>
-                <span class="method-start">8161 ms</span>
+                <span class="method-name">recordFailure([TestResult name=windowHandleTest status=FAILURE method=WindowHandleExample.windowHandleTest()[pri:0...)</span>
+                <span class="method-start">19870 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8735 ms</span>
+                <span class="method-start">20270 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

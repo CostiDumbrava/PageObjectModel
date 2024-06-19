@@ -22,6 +22,9 @@ public class ContactsPage extends SeleniumWrappers {
 	public By submitBtn = By.cssSelector("input[value='Send Message']");
 	public By sendMsg = By.cssSelector("div[class='wpcf7-response-output']");
 	
+	public By zoomInBtn = By.cssSelector("button[title='Zoom in']");
+	public By zoomOutBtn = By.cssSelector("button[title='Zoom out']");
+	public By iframe = By.tagName("iframe");
 	
 	
 	//metode
