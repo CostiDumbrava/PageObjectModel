@@ -21,6 +21,7 @@ public class LoginPage extends SeleniumWrappers  {
 	public By successLoginMsg = By.cssSelector("div[class*='sc_infobox_style_success']"); //mesajul cand te ai logat cu succes
 	public By errorLoginMsg = By.cssSelector("div[class*='sc_infobox_style_error']");//mesajul cand nu e corect userul sau parola
 	public By logoutBtn = By.linkText("Logout");
+	public By closeLoginBtn = By.xpath("//ul//a[@class='popup_close']");
 	
     //metode
 	public void loginInApp(String username, String password) {
