@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.google.common.io.Files;
@@ -23,9 +24,18 @@ public class BaseTest {
 public static WebDriver driver; //l am facut static pentru a avea un singur obiect, altfel cand s a facut mostenirea se pierde 
 
 public JavascriptExecutor jse;
-	
+
+/*
+   @BeforeClass
+   public void deleteAllCookies() {                      //daca nu folosim @AfterClass ca sa inchdem browserul atunci trebuie sa stergem cookie urile ca sa nu incarc memoria si sa nu ramana in memorie
+	   
+	   driver.manage().deleteAllCookies();
+   }
+	*/
+
+
     @Parameters({"appUrl"})
-	@BeforeClass 
+	@BeforeMethod
 	public void setup(String URL) throws InterruptedException {
 		
 		driver = new ChromeDriver();
@@ -36,7 +46,7 @@ public JavascriptExecutor jse;
 		driver.get(URL);
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000); //pauza de 5sec executiei, este bad practice in testarea automata
 		driver.quit();	

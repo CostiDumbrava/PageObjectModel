@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-27T10:42:30 OESZ" name="Suite1" finished-at="2024-06-27T10:42:58 OESZ" duration-ms="27495">
+  <suite started-at="2024-06-27T20:18:33 OESZ" name="Suite1" finished-at="2024-06-27T20:18:58 OESZ" duration-ms="24606">
     <groups>
     </groups>
-    <test started-at="2024-06-27T10:42:30 OESZ" name="test" finished-at="2024-06-27T10:42:58 OESZ" duration-ms="27495">
-      <class name="tests.DataProviderClassHome">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:30 OESZ" name="setup" finished-at="2024-06-27T10:42:34 OESZ" duration-ms="4028" status="PASS">
+    <test started-at="2024-06-27T20:18:33 OESZ" name="test" finished-at="2024-06-27T20:18:58 OESZ" duration-ms="24606">
+      <class name="tests.CookiesLogin">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:33 OESZ" name="setup" finished-at="2024-06-27T20:18:38 OESZ" duration-ms="4566" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,119 +18,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:34 OESZ" name="searchAndAssertBookCategories" data-provider="booksDataProviderHome" finished-at="2024-06-27T10:42:39 OESZ" duration-ms="4759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://keybooks.ro/shop/a-banquet-of-mouse/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Romans]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validLoginTest()[pri:1, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:38 OESZ" name="validLoginTest" finished-at="2024-06-27T20:18:38 OESZ" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchAndAssertBookCategories -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:39 OESZ" name="recordFailure" finished-at="2024-06-27T10:42:39 OESZ" duration-ms="1" status="PASS">
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:38 OESZ" name="recordFailure" finished-at="2024-06-27T20:18:38 OESZ" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchAndAssertBookCategories status=SUCCESS method=DataProviderClassHome.searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a] output={null}]]]>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=CookiesLogin.validLoginTest()[pri:1, instance:tests.CookiesLogin@2b91004a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method signature="searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:39 OESZ" name="searchAndAssertBookCategories" data-provider="booksDataProviderHome" finished-at="2024-06-27T10:42:44 OESZ" duration-ms="4452" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://keybooks.ro/shop/life-in-the-garden/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Romans]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAndAssertBookCategories -->
-        <test-method signature="searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:44 OESZ" name="searchAndAssertBookCategories" data-provider="booksDataProviderHome" finished-at="2024-06-27T10:42:48 OESZ" duration-ms="4527" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://keybooks.ro/shop/lonely-man-in-white-hat/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Romans]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAndAssertBookCategories -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:44 OESZ" name="recordFailure" finished-at="2024-06-27T10:42:44 OESZ" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchAndAssertBookCategories status=SUCCESS method=DataProviderClassHome.searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:48 OESZ" name="searchAndAssertBookCategories" data-provider="booksDataProviderHome" finished-at="2024-06-27T10:42:53 OESZ" duration-ms="4511" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://keybooks.ro/shop/the-son/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Romans]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAndAssertBookCategories -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:48 OESZ" name="recordFailure" finished-at="2024-06-27T10:42:48 OESZ" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchAndAssertBookCategories status=SUCCESS method=DataProviderClassHome.searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:53 OESZ" name="recordFailure" finished-at="2024-06-27T10:42:53 OESZ" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchAndAssertBookCategories status=SUCCESS method=DataProviderClassHome.searchAndAssertBookCategories(java.lang.String,java.lang.String)[pri:0, instance:tests.DataProviderClassHome@7bab3f1a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DataProviderClassHome@7bab3f1a]" started-at="2024-06-27T10:42:53 OESZ" name="tearDown" finished-at="2024-06-27T10:42:58 OESZ" duration-ms="5186" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:38 OESZ" name="tearDown" finished-at="2024-06-27T20:18:43 OESZ" duration-ms="5180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.DataProviderClassHome -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:43 OESZ" name="setup" finished-at="2024-06-27T20:18:47 OESZ" duration-ms="3914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://keybooks.ro]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cookieLogin()[pri:2, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:47 OESZ" name="cookieLogin" finished-at="2024-06-27T20:18:52 OESZ" duration-ms="5081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cookieLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:52 OESZ" name="tearDown" finished-at="2024-06-27T20:18:58 OESZ" duration-ms="5182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:tests.CookiesLogin@2b91004a]" started-at="2024-06-27T20:18:52 OESZ" name="recordFailure" finished-at="2024-06-27T20:18:52 OESZ" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cookieLogin status=SUCCESS method=CookiesLogin.cookieLogin()[pri:2, instance:tests.CookiesLogin@2b91004a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+      </class> <!-- tests.CookiesLogin -->
     </test> <!-- test -->
   </suite> <!-- Suite1 -->
 </testng-results>
