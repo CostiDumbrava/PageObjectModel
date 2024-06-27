@@ -25,11 +25,12 @@ public class PriceSortHomework extends BaseTest {
 			double d2=Double.parseDouble(shopPage.deleteCurrencyChar(high)); 
 			
 			
-			boolean flag=false;
-			if (d1<d2) 
-			{flag = true;}
-			assertTrue(flag);
+			//boolean flag=false;
+			//if (d1<d2) 
+			//{flag = true;}
+			//assertTrue(flag);
 			
+			 assertTrue(d1<d2? true: false);
 
 }
 }

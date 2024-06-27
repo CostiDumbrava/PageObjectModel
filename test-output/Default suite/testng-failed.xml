@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.IframeExample">
+      <class name="tests.PriceSortHomework">
         <methods>
+          <include name="selectByValueIndex"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="iframeExampleTest"/>
           <include name="recordFailure"/>
         </methods>
-      </class> <!-- tests.IframeExample -->
+      </class> <!-- tests.PriceSortHomework -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

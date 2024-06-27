@@ -4,14 +4,14 @@
   <parameter name="appUrl" value="https://keybooks.ro"/>
   <test thread-count="5" name="test(failed)">
     <classes>
-      <class name="tests.WindowHandleExample">
+      <class name="tests.DataProviderClassHome">
         <methods>
-          <include name="windowHandleTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="recordFailure"/>
+          <include name="searchAndAssertBookCategories" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- tests.WindowHandleExample -->
+      </class> <!-- tests.DataProviderClassHome -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
